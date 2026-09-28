@@ -1,0 +1,57 @@
+HƯỚNG DẪN THIỆP 20/11 "LỚP HỌC CỦA BA"
+
+================================================================
+THIỆP CHẠY THẾ NÀO
+================================================================
+1. Chạm con dấu hình trống: ba tiếng trống vào lớp "tùng tùng tùng".
+2. Chạm và giữ tay lên bảng: lời giải bài toán hiện dần bằng chữ phấn. Buông tay thì phấn dừng.
+   Viết xong, chữ cuối (ví dụ "(đpcm)") được khoanh tròn, bụi phấn bay lên thành cánh hoa cúc.
+3. Vào lớp học 3D, ngồi ở bàn cuối: kéo tay để nhìn quanh, chạm vào 6 chỗ lấp lánh:
+   bảng, chồng bài kiểm tra, cặp kính, bó hoa, thước compa máy tính, trống trường ngoài cửa.
+4. Tìm đủ 6 thì tắt đèn lớp: trần lớp hóa bầu trời sao, mỗi ngôi sao là một học trò.
+5. Bài kiểm tra của con hiện trên bàn giáo viên: điểm 10, lời phê và lá thư.
+6. Ba viết điều ước, phóng máy bay giấy qua cửa sổ, cả đàn máy bay bay quanh lớp.
+7. Cuối cùng là tờ giấy khen của cả nhà.
+
+================================================================
+SỬA NỘI DUNG: file thiep-20-11\config.js
+================================================================
+Mở bằng Notepad hoặc VS Code, chỉ sửa chữ nằm giữa hai dấu nháy.
+
+  to         cách gọi người nhận (Ba)
+  from       tên người gửi. Để 'Con' thì cuối thư ký "Con của Ba"; ghi tên khác thì có thêm tên.
+  years      số năm đứng lớp. Các con số trong thiệp tự tính theo số này.
+  board      các dòng viết lên bảng lúc đầu (1 đến 6 dòng). Chữ "Bài toán:", "Giả thiết:",
+             "Ta có:", "Vậy:" tự viết bằng phấn vàng. Chữ cuối cùng sẽ được khoanh tròn.
+  secrets    6 lời nhắn khi chạm vào đồ vật, mỗi cái có title (tiêu đề) và text (lời nhắn):
+               board = bảng, tests = chồng bài kiểm tra, glasses = cặp kính,
+               flowers = bó hoa, tools = thước/compa/máy tính, drum = trống trường
+  letter     lá thư trên tờ bài kiểm tra. Cách một dòng trống = sang đoạn mới.
+  grade      điểm ghi trong ô "Điểm" (10)
+  remark     lời phê màu đỏ
+  gift       giấy khen: title (danh hiệu), reason (lý do), intro (lời nhắn về món quà)
+  music      bài hát riêng: chép file mp3 vào thư mục thiep-20-11 rồi ghi music: 'ten-bai.mp3'
+
+Chỗ trống tự điền số (dùng được ở mọi câu):
+  {years}     số năm đứng lớp                {students}  số học trò ước tính
+  {tests}     số bài kiểm tra đã chấm         {lessons}   số tiết đã dạy
+  {chalk}     số hộp phấn đã dùng             {to} {from} cách gọi, tên người gửi
+  (ước tính: mỗi năm 4 lớp, mỗi lớp 42 học sinh, 10 bài kiểm tra mỗi người, 17 tiết mỗi tuần)
+
+Hai điều để không làm hỏng file:
+  - Không gõ dấu nháy đơn ' bên trong câu (cần thì dùng ’). Trong lá thư tránh dấu `.
+  - Giữ nguyên dấu phẩy cuối dòng và các dấu ngoặc [ ] { }.
+
+================================================================
+XEM THỬ TRÊN MÁY
+================================================================
+Bấm đúp xem-thu.cmd. Nó kiểm tra config.js (báo đúng dòng nếu gõ sai) rồi mở trình duyệt.
+  - Thêm #skip vào cuối link để vào thẳng lớp học, #all để coi như đã tìm đủ 6 điều bí mật.
+  - Xem xong thì đóng cửa sổ đen "Xem thu thiep 20-11".
+  - Không bấm đúp index.html để xem được, vì trình duyệt chặn code khi mở file trực tiếp.
+
+================================================================
+ĐƯA LÊN MẠNG
+================================================================
+Nhắn Claude "đưa thiệp 20/11 lên mạng" để tạo link riêng (giống thiệp Trung Thu),
+hoặc kéo cả thư mục thiep-20-11 thả vào https://app.netlify.com/drop
